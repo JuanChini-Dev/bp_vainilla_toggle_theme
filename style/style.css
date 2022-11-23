@@ -11,7 +11,7 @@
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
-    --primary-color: #695CFE;
+    --primary-color: #FF0078;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
@@ -173,25 +173,10 @@ body.dark .sidebar header .toggle{
     margin-top: 40px;
 }
 
-.sidebar li.search-box{
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    cursor: pointer;
-    transition: var(--tran-05);
-}
 
-.sidebar li.search-box input{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    background-color: var(--primary-color-light);
-    color: var(--text-color);
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 500;
-    transition: var(--tran-05);
-}
+
+
+
 .sidebar li a{
     list-style: none;
     height: 100%;
@@ -200,9 +185,14 @@ body.dark .sidebar header .toggle{
     align-items: center;
     height: 100%;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 4px;
     text-decoration: none;
     transition: var(--tran-03);
+}
+
+.sidebar li.selected {
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
 }
 
 .sidebar li a:hover{
